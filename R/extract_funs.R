@@ -13,11 +13,11 @@
 #' @export
 extract_helpers <- function() {
   with(data.frame(
-    psychvar = here::here("helpers", "psychs.csv"),
+    psychvar = here::here("data-raw", "psychs.csv"),
     calculat = here::here("data-raw", "calculator_final_v7_c_301116.xlsx"),
     calc_sheet = "equations",
-    subcortex = here::here("helpers", "subcortical.csv"),
-    hippocampi = here::here("helpers", "hippocampus.csv")
+    subcortex = here::here("data-raw", "subcortical.csv"),
+    hippocampi = here::here("data-raw", "hippocampus.csv")
   ),
   list(
     psychohelp = read.csv(psychvar, sep = ";"), # psychological variables

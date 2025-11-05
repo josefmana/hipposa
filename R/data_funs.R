@@ -58,7 +58,7 @@ import_data <- function(files, helpers) {
           Study.ID = sub("-", "", study_id),
           event = sub("_arm_2|_arm_3", "", redcap_event_name)
         ) |>
-        dplyr::select(Study.ID, event, tidyselect::all_of( c(helpers$psychohelp$variable, "moca"))) |>
+        dplyr::select(Study.ID, event, tidyselect::all_of(c(helpers$psychohelp$variable, "moca"))) |>
         dplyr::filter(event == "enrollment"),
       # MDS-UPDRS data
       motor = openxlsx::read.xlsx(motor, startRow = 2, check.names = TRUE) |>

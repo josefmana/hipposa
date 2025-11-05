@@ -11,6 +11,7 @@ mods/**/*.rds
 **/*.log
 **/*.tex
 data-raw/
+helpers/
 
 # History files
 .Rprofile
