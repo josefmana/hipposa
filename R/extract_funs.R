@@ -17,7 +17,7 @@ extract_helpers <- function(paths) {
     calculator = openxlsx::read.xlsx(calculat, sheet = calc_sheet, startRow = 2),
     psych = read.csv(psychvar, sep = ";") |> dplyr::filter(!is.na(domain)), # psychological variables for PD vs CON comparisons
     subco = read.csv(subcortex, sep = ","), # subcortical structures
-    hippo = read.csv(hippocampi, sep = ",") |> dplyr::filter(complete.cases(name)), # hippocampal structures
+    hippo = read.csv(hippocampi, sep = ";") |> dplyr::filter(complete.cases(name)), # hippocampal structures
     mta = read.csv(mta, sep = ",") # Medial Temporal Atrophy
   ))
 }

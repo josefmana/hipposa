@@ -13,10 +13,6 @@
 #'
 #' @export
 setup_regressions <- function(help) {
-  # Extract helpers:
-  for (i in names(help)) {
-    assign(i, help[[i]])
-  }
   # Set-up basic formulas:
   forms <- data.frame(
     object = c(
@@ -46,7 +42,7 @@ setup_regressions <- function(help) {
     )
   )
   # Add "cognition on hippocampi" models:
-  for (x in hippo$name) {
+  for (x in help$hippo$name) {
     forms <- forms |>
       tibble::add_row(
         object = "psych",

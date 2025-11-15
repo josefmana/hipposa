@@ -2,7 +2,7 @@
 targets_visualisation <- list(
   targets::tar_target(
     boxplot_brains,
-    command = boxplots(
+    command = draw_boxplots(
       d0 = raw_data,
       df = preprocessed_data,
       fit = regressions$subcortical,
@@ -14,7 +14,7 @@ targets_visualisation <- list(
   ),
   targets::tar_target(
     boxplot_cognition_osa,
-    command = boxplots(
+    command = draw_boxplots(
       d0 = raw_data,
       df = preprocessed_data,
       fit = regressions$cognition,
@@ -25,7 +25,8 @@ targets_visualisation <- list(
     )
   ),
   targets::tar_target(
-    boxplot_cognition_pd, boxplots(
+    boxplot_cognition_pd,
+    command = draw_boxplots(
       d0 = raw_data,
       df = preprocessed_data,
       fit = regressions$cognition,

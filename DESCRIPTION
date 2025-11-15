@@ -29,4 +29,5 @@ Imports:
     priorsense,
     bayesplot,
     tidyr,
-    targets
+    targets,
+    gridExtra
