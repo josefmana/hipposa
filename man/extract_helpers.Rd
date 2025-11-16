@@ -4,17 +4,18 @@
 \alias{extract_helpers}
 \title{Prepare 'Helper' Files}
 \usage{
-extract_helpers()
+extract_helpers(paths)
+}
+\arguments{
+\item{paths}{Paths to files.}
 }
 \value{
 A list with data frames containing different
 kinds of helper files.
 }
 \description{
-This function takes no parameter but needs to be
-adjusted manually if desired.
-It is used in the \pkg{targets} pipeline to check
-for changes in files that do not contain data proper
-but 'helper' data, i.e., data mapping raw data
-structures to functions used throughout the pipeline.
+This function needs to be adjusted manually
+if desired.
+It extract helper files that are later used to
+control analysis flow.
 }

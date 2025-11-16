@@ -2,7 +2,7 @@
 % Please edit documentation in R/extract_funs.R
 \name{extract_coefficients}
 \alias{extract_coefficients}
-\title{Extracts Coefficients of Bayesian Regressions}
+\title{Extract Coefficients of Bayesian Regressions}
 \usage{
 extract_coefficients(fit)
 }

@@ -4,13 +4,16 @@
 \alias{fit_regressions}
 \title{Fit a Set of Linear Regressions}
 \usage{
-fit_regressions(df, help)
+fit_regressions(df, setup, help)
 }
 \arguments{
-\item{df}{The data frame}
+\item{df}{The data frame.}
+
+\item{setup}{A set-up file as prepared by
+\code{setup_regressions}.}
 
 \item{help}{A list with helpers files prepared
-by \code{extract_helpers}}
+by \code{extract_helpers}.}
 }
 \value{
 A list with linear models, one per outcome
@@ -20,5 +23,5 @@ Loops through outcomes to calculate a set of
 linear regressions.
 }
 \seealso{
-\code{\link[=fit_reg]{fit_reg()}} is used to fit single regression lists.
+\code{\link[=fit_lm]{fit_lm()}} is used to fit single regression lists.
 }

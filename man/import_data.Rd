@@ -2,7 +2,7 @@
 % Please edit documentation in R/data_funs.R
 \name{import_data}
 \alias{import_data}
-\title{Imports Raw Data}
+\title{Import Raw Data}
 \usage{
 import_data(files, helpers)
 }

@@ -8,7 +8,7 @@
 #'   of interest.
 #' @param X The right side of the linear model.
 #' @param w Indicator whether regression weights shall
-#'   be used (TRUE) or not(FALSE, default)
+#'   be used (`TRUE`) or not (`FALSE`, default)
 #'
 #' @seealso [fit_regressions()] wraps this function.
 #'
@@ -35,7 +35,7 @@ fit_lm <- function(d, outcomes, X = "SUBJ * AHI.F + AGE + GENDER + SBTIV", w = F
 #'   of interest.
 #' @param X The right side of the linear model.
 #' @param w Indicator whether regression weights shall
-#'   be used (TRUE) or not(FALSE, default)
+#'   be used (`TRUE`) or not (`FALSE`, default)
 #'
 #' @seealso [fit_regressions()] wraps this function.
 #'
